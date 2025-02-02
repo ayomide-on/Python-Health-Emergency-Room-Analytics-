@@ -1,0 +1,13 @@
+Markdown==3.4.3
+markdown-it-py==2.2.0
+matplotlib==3.7.1
+numpy==1.23.5
+oauthlib==3.2.2
+openpyxl==3.1.2
+pandas==2.0.1
+seaborn==0.12.2
+seaborn==0.12.2
+decorator==5.1.1
+numpy==1.23.5
+oauthlib==3.2.2
+openpyxl==3.1.2
