@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital ER Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hospital Emergency Room Analytics</h1>
+
+    <h2>Wait Times by Department and Age Group</h2>
+    <table>
+        <tr>
+            <th>Department</th>
+            <th>Age Group</th>
+            <th>Average Wait Time</th>
+        </tr>
+        {% for row in Wait_time %}
+        <tr>
+            <td>{{ row['Department Referral'] }}</td>
+            <td>{{ row['Age Group'] }}</td>
+            <td>{{ row['Patient Waittime'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Correlation Between Wait Time and Satisfaction</h2>
+    <p>Correlation: {{ Corr }}</p>
+
+    <h2>Demographics and Department Referrals</h2>
+    <table>
+        <tr>
+            <th>Race</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Referral Count</th>
+        </tr>
+        {% for row in Demographics %}
+        <tr>
+            <td>{{ row['Patient Race'] }}</td>
+            <td>{{ row['Patient Gender'] }}</td>
+            <td>{{ row['Department Referral'] }}</td>
+            <td>{{ row['Referral Count'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Admission Rates by Demographics and Department</h2>
+    <table>
+        <tr>
+            <th>Race</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Admission Rate</th>
+        </tr>
+        {% for row in admission_analysis %}
+        <tr>
+            <td>{{ row['Patient Race'] }}</td>
+            <td>{{ row['Patient Gender'] }}</td>
+            <td>{{ row['Department Referral'] }}</td>
+            <td>{{ row['Patient Admission Flag'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
