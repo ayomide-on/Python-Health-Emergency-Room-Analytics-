@@ -2,7 +2,7 @@
 
 This project analyzes hospital emergency response data to uncover insights into patient wait times, satisfaction levels, demographic referrals, and admission trends. Using Python, Pandas, and Flask, the analysis is visualized on a web interface for better decision-making and performance tracking.
 
-Dataset
+## Dataset
 The dataset includes key attributes of patient records:
 Patient ID
 Patient Admission Date
@@ -16,30 +16,30 @@ Patient Satisfaction Score
 Patient Wait Time
 Patients CM (Case Management)
 
-Key Analyses Performed
+## Key Analyses Performed
 
-Wait Time Analysis
+# Wait Time Analysis
 
 Average wait times segmented by department and age group.
 
-Satisfaction vs. Wait Time Correlation
+# Satisfaction vs. Wait Time Correlation
 
 Analyzed the relationship between wait times and patient satisfaction scores.
 
-Demographic and Department Referrals
+# Demographic and Department Referrals
 
 Evaluated referral trends based on race, gender, and department.
 
-Admission Analysis
+# Admission Analysis
 
 Studied admission rates segmented by demographics and department.
 
-Technologies Used
+# Technologies Used
 Python (Pandas, Flask, Matplotlib, Seaborn)
 HTML, CSS (Static Styling)
 Flask Framework (for web hosting and data visualization)
 
-Project Structure
+# Project Structure
 
 ├── static
 │   ├── style.css  # Styling for the web interface
@@ -50,7 +50,7 @@ Project Structure
 │   ├── patient_data.csv  # Sample dataset
 ├── README.md  # Project documentation
 
-How to Run the Project
+# How to Run the Project
 
 Clone the Repository
 git clone https://github.com/your-username/health-emergency-response-analysis.git
@@ -62,7 +62,7 @@ python app.py
 
 The application will be available at http://127.0.0.1:5002/.
 
-Web Interface Preview
+## Web Interface Preview
 
 The analysis results are displayed on a Flask-hosted web application with:
 Tabular reports for wait times, demographic referrals, and admissions
@@ -72,10 +72,10 @@ Add interactive visualizations using Plotly.
 Integrate database support for dynamic data updates.
 Enhance predictive modeling for better patient flow optimization.
 
-Contributing
+# Contributing
 Contributions are welcome! Feel free to fork this repository and submit a pull request with improvements or suggestions.
 
-License
+# License
 This project is licensed under the MIT License.
 
 Developed by ODUNTAN AYOMIDE
